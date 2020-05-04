@@ -1,8 +1,8 @@
 .header-section {
     position: fixed;
     top: 0;
-    width: 100vw;
-    background: var(--darkest);
+    width: 100%;
+    background: #cc0000;
     z-index: 1;
 }
 
@@ -10,16 +10,10 @@
     margin: 8px;
     margin-top: 2px;
     height: 40px;
-    background: linear-gradient(
-        to right,
-        var(--darkest),
-        var(--light) 10%,
-        var(--light) 90%,
-        var(--darkest)
-    );
-    color: var(--darkest);
+    background: #cc0000;
+    color: #ffffff;
     text-align: center;
     font-family: geneva;
     font-size: 2em;
-    border-radius: 12px;
+    border-radius: 0;
 }

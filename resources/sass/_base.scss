@@ -1,17 +1,9 @@
-main {
-    overflow-y: scroll;
-    padding: 28px 20px;
-}
-
-// .current {
-//     background: var(--light);
-//     padding: 4px;
-// }
-
 body {
-    margin: auto;
-    top: 0;
-    background-color: var(--darkest);
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    top: 100px;
+    background-color: #ffffff;
     font-family: sans-serif;
     display: grid;
     grid-template-rows: 1fr max 1fr;
@@ -23,67 +15,4 @@ body {
     align-self: center;
     align-items: center;
     align-content: center;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-wrap {
-    flex-wrap: wrap;
-}
-
-.main-container {
-    margin-top: 52px;
-    margin-bottom: 52px;
-}
-
-.grid {
-    display: grid;
-}
-
-.border {
-    border: 12px;
-    border: medium solid var(--darker);
-}
-
-.border-bottom-fat {
-    border-bottom: 12px solid var(--dark);
-}
-
-.border-bottom {
-    border-bottom: 4px solid var(--light);
-}
-
-.border-radius {
-    border-radius: 12px;
-}
-
-.shadow {
-    box-shadow: 0 0 20px var(--dark);
-}
-
-/* padding margin  */
-.margin-4 {
-    margin: 4px;
-}
-
-.margin-8 {
-    margin: 8px;
-}
-
-.margin-16 {
-    margin: 16px;
-}
-
-.padding-4 {
-    padding: 4px;
-}
-
-.padding-8 {
-    padding: 8px;
-}
-
-.padding-12 {
-    padding: 12px;
 }

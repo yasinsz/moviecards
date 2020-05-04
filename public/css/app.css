@@ -7,15 +7,12 @@
   --dark: #0a5c8f;
 }
 
-main {
-  overflow-y: scroll;
-  padding: 28px 20px;
-}
-
 body {
-  margin: auto;
-  top: 0;
-  background-color: var(--darkest);
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+  top: 100px;
+  background-color: #ffffff;
   font-family: sans-serif;
   display: grid;
   grid-template-rows: 1fr max 1fr;
@@ -29,75 +26,11 @@ body {
   align-content: center;
 }
 
-.flex {
-  display: flex;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.main-container {
-  margin-top: 52px;
-  margin-bottom: 52px;
-}
-
-.grid {
-  display: grid;
-}
-
-.border {
-  border: 12px;
-  border: medium solid var(--darker);
-}
-
-.border-bottom-fat {
-  border-bottom: 12px solid var(--dark);
-}
-
-.border-bottom {
-  border-bottom: 4px solid var(--light);
-}
-
-.border-radius {
-  border-radius: 12px;
-}
-
-.shadow {
-  box-shadow: 0 0 20px var(--dark);
-}
-
-/* padding margin  */
-
-.margin-4 {
-  margin: 4px;
-}
-
-.margin-8 {
-  margin: 8px;
-}
-
-.margin-16 {
-  margin: 16px;
-}
-
-.padding-4 {
-  padding: 4px;
-}
-
-.padding-8 {
-  padding: 8px;
-}
-
-.padding-12 {
-  padding: 12px;
-}
-
 .header-section {
   position: fixed;
   top: 0;
-  width: 100vw;
-  background: var(--darkest);
+  width: 100%;
+  background: #cc0000;
   z-index: 1;
 }
 
@@ -105,59 +38,53 @@ body {
   margin: 8px;
   margin-top: 2px;
   height: 40px;
-  background: linear-gradient(to right, var(--darkest), var(--light) 10%, var(--light) 90%, var(--darkest));
-  color: var(--darkest);
+  background: #cc0000;
+  color: #ffffff;
   text-align: center;
   font-family: geneva;
   font-size: 2em;
-  border-radius: 12px;
-}
-
-.nav__button {
-  margin: auto;
-  padding-top: 10px;
-}
-
-.nav {
-  display: flex;
+  border-radius: 0;
 }
 
 .footer-section {
   position: fixed;
   bottom: 0;
   width: 100vw;
-  background: var(--darkest);
+  background: whitesmoke;
+  border-style: 2px solid;
 }
 
 .footer {
   margin: 8px;
   margin-bottom: 2px;
   height: 40px;
-  background: linear-gradient(to right, var(--darkest), var(--light) 10%, var(--light) 90%, var(--darkest));
-  color: var(--darkest);
-  border-radius: 12px;
+  background: whitesmoke;
+  color: whitesmoke;
   display: flex;
   align-items: center;
+  justify-content: center;
   justify-content: space-around;
 }
 
 .footer-item {
   text-decoration: none;
-  color: var(--darkest);
+  color: whitesmoke;
   height: 32px;
   width: auto;
 }
 
 .container {
-  height: 300px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-family: "Open Sans", "open-sans", sans-serif;
   letter-spacing: 0.03em;
   line-height: 1.6;
   color: black;
+  justify-content: center;
 }
 
 .container .card {
@@ -169,7 +96,7 @@ body {
   position: relative;
   text-align: center;
   transition: all 0.25s;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .container .card:hover {
