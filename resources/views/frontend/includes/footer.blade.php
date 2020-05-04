@@ -1,5 +1,15 @@
-<div class="nav">
-    <div class="nav__button nav__button--index nbi"><a href="#index"><img src="/resources/img/HOME.png" width=40px; alt=""></div>
-    <div class="nav__button nav__button--create nbc"><a href="#create"><img src="/img/edit.png" width=40px; alt=""></div>
-    <div class="nav__button nav__button--profile nbp"><a href="#profile"><img src="/img/user.png" width=40px; alt=""></div>
-</div>
+<footer>
+
+    <section class="footer-section border-radius">
+        <div class="footer">
+            <a href="{{ url('/') }}">
+
+                <img class="footer-item" src="https://images.app.goo.gl/ov3cvzFxYNe3CuvW7">
+                <a href="{{ url('/') }}">
+                    <img class="footer-item" src="https://images.app.goo.gl/rCJddSNh6CBYFa967">
+                    <a href="{{ url('/search') }}">
+                        <img class="footer-item" src="https://images.app.goo.gl/aLZptz5xnQJHymYD9">
+                        <a href="{{ url('/create') }}">
+    </section>
+
+</footer>

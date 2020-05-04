@@ -1,13 +1,24 @@
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    // z-index: 999;
-    margin: 2px 4px 8px 4px;
-    height: 60px;
-    background: var(--light);
-    border: 2px solid var(--dark);
-    // border-radius: 90px;
-    box-shadow: inset 0 12px 12px var(--dark), 1px 12px 8px var(--light),
-        1px -12px 8px var(--light);
+.header-section {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background: var(--darkest);
+}
+
+.header {
+    margin: 8px;
+    margin-top: 2px;
+    height: 40px;
+    background: linear-gradient(
+        to right,
+        var(--darkest),
+        var(--light) 10%,
+        var(--light) 90%,
+        var(--darkest)
+    );
+    color: var(--darkest);
+    text-align: center;
+    font-family: geneva;
+    font-size: 2em;
+    border-radius: 12px;
 }
