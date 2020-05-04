@@ -98,6 +98,7 @@ body {
   top: 0;
   width: 100vw;
   background: var(--darkest);
+  z-index: 1;
 }
 
 .header {
@@ -110,6 +111,15 @@ body {
   font-family: geneva;
   font-size: 2em;
   border-radius: 12px;
+}
+
+.nav__button {
+  margin: auto;
+  padding-top: 10px;
+}
+
+.nav {
+  display: flex;
 }
 
 .footer-section {
@@ -136,5 +146,47 @@ body {
   color: var(--darkest);
   height: 32px;
   width: auto;
+}
+
+.container {
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Open Sans", "open-sans", sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  color: black;
+}
+
+.container .card {
+  width: 300px;
+  height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transition: all 0.25s;
+  margin-bottom: 30px;
+}
+
+.container .card:hover {
+  top: -15px;
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card h2 {
+  font-weight: 600;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.container .card p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 1rem;
+  text-align: left;
 }
 

@@ -1,26 +1,7 @@
-// * {
-//     box-sizing: border-box;
-// }
-
-// body {
-//     font-family: sans-serif;
-//     display: grid;
-//     grid-template-rows: 1fr max 1fr;
-//     height: 100vh;
-//     // max-width: 400px;
-//     margin: auto;
-//     background: var(--darkest);
-//     padding: 5px;
-// }
-
 main {
     overflow-y: scroll;
     padding: 28px 20px;
 }
-
-// .hidden {
-//     display: none;
-// }
 
 // .current {
 //     background: var(--light);
