@@ -1,0 +1,27 @@
+.nav__button {
+    // padding: 3px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.nav {
+    display: flex;
+}
+
+//@at-root {
+// color: var(--darker);
+//}
+footer {
+    z-index: 999;
+    margin: 2px 4px 2px 4px;
+    height: 63px;
+    // background: var(--light);
+    border: 2px solid var(--dark);
+    // border-radius: 90px;
+    box-shadow: inset 0 12px 12px var(--dark), 1px 12px 8px var(--light),
+        1px -12px 8px var(--light);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
