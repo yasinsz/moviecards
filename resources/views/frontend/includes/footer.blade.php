@@ -1,5 +1,13 @@
-<div class="nav">
-    <div class="nav__button nav__button--index nbi"><a href="#index"><img src="/resources/img/HOME.png" width=40px; alt=""></div>
-    <div class="nav__button nav__button--create nbc"><a href="#create"><img src="/img/edit.png" width=40px; alt=""></div>
-    <div class="nav__button nav__button--profile nbp"><a href="#profile"><img src="/img/user.png" width=40px; alt=""></div>
-</div>
+    <section class="footer-section border-radius">
+        <div class="footer">
+
+            <a href="{{ url('/') }}">
+                <img class="footer-item" src="https://image.flaticon.com/icons/svg/846/846449.svg">
+
+                <a href="{{ url('/search') }}">
+                    <img class="footer-item" src="https://image.flaticon.com/icons/svg/483/483356.svg">
+
+                    <a href="{{ url('/create') }}">
+                        <img class="footer-item" src="https://image.flaticon.com/icons/svg/1250/1250616.svg">
+
+    </section>

@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Movie Cards</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="resources/saas/app.scss">
-    <script defer src="resources/js/app.js"></script>
+    <link rel="stylesheet" href="{{ asset('css/app.css')}}">
+    <script defer src="{{ asset('js/app.js')}}"></script>
 </head>
 
 <body>
     @include('frontend/includes/header')
-    @yield('content')
+    @yield('content-home')
+    @yield('content-search')
+    @yield('content-create')
     @include('frontend/includes/footer')
 
 
