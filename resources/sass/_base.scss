@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    top: 100px;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-rows: 1fr max 1fr;
+    height: 100vh;
+}
+
+.center {
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}

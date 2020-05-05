@@ -1,0 +1,27 @@
+.footer-section {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background: whitesmoke;
+    border-style: 2px solid;
+}
+
+.footer {
+    margin: 8px;
+    // margin-left: 70px;
+    margin-bottom: 2px;
+    height: 40px;
+    background: whitesmoke;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.footer-item {
+    text-decoration: none;
+    color: whitesmoke;
+    height: 32px;
+    width: auto;
+}
