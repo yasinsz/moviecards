@@ -24,3 +24,11 @@ Route::get('/search', function () {
 Route::get('/create', function () {
     return view('frontend.create');
 });
+
+Route::get('/register', function () {
+    return view('frontend.register.register');
+});
+
+Route::get('/login', function () {
+    return view('frontend.register.login');
+});
