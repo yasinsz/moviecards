@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('frontend.home');
 });
 
+Route::get('/bookmarks', function () {
+    return view('frontend.bookmarks');
+});
+
 Route::get('/search', function () {
     return view('frontend.search');
 });
