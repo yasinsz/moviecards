@@ -119,6 +119,21 @@ body {
   text-align: left;
 }
 
+.container .card__bookmark {
+  border: 22px solid #b6b6b6;
+  border-bottom-color: transparent;
+  height: 24px;
+  position: absolute;
+  right: 20px;
+}
+
+.container .red {
+  border: 22px solid crimson;
+  border-bottom-color: transparent;
+  height: 24px;
+  position: absolute;
+}
+
 .page-container {
   margin: 120px auto 0 auto;
 }

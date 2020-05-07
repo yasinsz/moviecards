@@ -28,12 +28,7 @@
 
         <div class="checkbox">
             <label>
-                <input type="checkbox" checked="checked" /><i class="helper"></i>Allready watched
-            </label>
-        </div>
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" /><i class="helper"></i>Unwatched
+                <input type="checkbox" checked="checked" /><i class="helper"></i>Watched?
             </label>
         </div>
     </form>

@@ -42,4 +42,20 @@
             text-align: left;
         }
     }
+
+    .card__bookmark {
+        border: 22px solid rgb(182, 182, 182);
+        border-bottom-color: transparent;
+        height: 24px;
+        position: absolute;
+        right: 20px;
+    }
+
+    .red {
+        border: 22px solid crimson;
+        border-bottom-color: transparent;
+        height: 24px;
+        position: absolute;
+      
+      }
 }
