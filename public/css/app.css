@@ -50,7 +50,7 @@ body {
   position: fixed;
   bottom: 0;
   width: 100vw;
-  background: whitesmoke;
+  background: #212121;
   border-style: 2px solid;
 }
 
@@ -58,8 +58,8 @@ body {
   margin: 8px;
   margin-bottom: 2px;
   height: 40px;
-  background: whitesmoke;
-  color: whitesmoke;
+  background: #212121;
+  color: #212121;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +68,7 @@ body {
 
 .footer-item {
   text-decoration: none;
-  color: whitesmoke;
+  color: #212121;
   height: 32px;
   width: auto;
 }
@@ -96,7 +96,8 @@ body {
   position: relative;
   text-align: center;
   transition: all 0.25s;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
+  margin-top: -50px;
 }
 
 .container .card:hover {
@@ -105,6 +106,7 @@ body {
 }
 
 .container .card h2 {
+  margin-top: 15px;
   font-weight: 600;
   text-align: left;
   margin-left: 1rem;
@@ -115,6 +117,21 @@ body {
   font-weight: 300;
   margin-left: 1rem;
   text-align: left;
+}
+
+.container .card__bookmark {
+  border: 22px solid #b6b6b6;
+  border-bottom-color: transparent;
+  height: 24px;
+  position: absolute;
+  right: 20px;
+}
+
+.container .red {
+  border: 22px solid crimson;
+  border-bottom-color: transparent;
+  height: 24px;
+  position: absolute;
 }
 
 .page-container {
