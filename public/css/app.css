@@ -369,6 +369,7 @@ fieldset {
 
 .form-group input {
   height: 1.9rem;
+  text-align: left;
 }
 
 .form-group textarea {
