@@ -13,9 +13,7 @@
 
 <body>
     @include('frontend/includes/header')
-    @yield('content-home')
-    @yield('content-search')
-    @yield('content-create')
+    @yield('content')
     @include('frontend/includes/footer')
 
 

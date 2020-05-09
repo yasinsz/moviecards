@@ -1,6 +1,6 @@
 @extends('frontend/layouts/app')
 
-@section('content-create')
+@section('content')
 
 <div class="container">
     <form>
