@@ -1,6 +1,6 @@
 @extends('frontend/layouts/app')
 
-@section('content-bookmarks')
+@section('content')
 
 
 @endsection

@@ -1,6 +1,6 @@
 @extends('frontend/layouts/app')
 
-@section('content-home')
+@section('content')
 
 <div class="container">
     <div class="card">

@@ -21,10 +21,6 @@ Route::get('/bookmarks', function () {
     return view('frontend.bookmarks');
 });
 
-Route::get('/search', function () {
-    return view('frontend.search');
-});
-
 Route::get('/create', function () {
     return view('frontend.create');
 });
@@ -35,4 +31,17 @@ Route::get('/register', function () {
 
 Route::get('/login', function () {
     return view('frontend.register.login');
+});
+
+
+
+
+
+
+Route::get('/search', function () {
+    return view('frontend.search.search');
+});
+
+Route::get('/search/movie', function () {
+    return view('frontend.search.show');
 });
