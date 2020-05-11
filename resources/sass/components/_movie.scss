@@ -1,0 +1,42 @@
+.container-movie-info {
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 28px;
+}
+
+p {
+    font-family: Helvetica;
+}
+
+.feature-cast {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.cast-container {
+    display: grid;
+    //grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cast-card {
+    display: inline-grid;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    max-width: 150px;
+}
+
+.play {
+    width: 330px;
+}
+
+.card-add {
+    width: 330px;
+}
+
+.movie-images {
+    margin-bottom: 20px;
+}
+
+.grid-images {
+    margin-bottom: 50px;
+}

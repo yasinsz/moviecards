@@ -148,19 +148,29 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    //grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-row {
+    margin-bottom: 40px;
 }
 
 .movie {
-    display: grid;
+    display: inline-grid;
     align-items: center;
     margin-left: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    max-width: 150px;
 }
 
 h6 {
+    font-family: Helvetica;
     text-align: left;
     padding-left: 20px;
     margin-top: 20px;
     margin-bottom: 15px;
 }
+
+// .movie-info {
+//     text-align: justify;
+// }
