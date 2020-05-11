@@ -1,0 +1,29 @@
+.container-dropdown {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    padding: 25px;
+    margin: auto;
+}
+
+.dropdown {
+    margin-top: 80px;
+    margin-left: -200px;
+    align-items: center;
+}
+
+.drop-list {
+    box-sizing: border-box;
+    padding: 1em;
+    border-radius: 15px;
+    outline: none;
+}
+
+.drop-items {
+    list-style: none;
+    border: 1px solid #ccc;
+    margin-top: -1px;
+    line-height: 2;
+    padding: 5px 20px;
+    background: white;
+}

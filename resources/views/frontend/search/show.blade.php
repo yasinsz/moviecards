@@ -7,7 +7,7 @@
 <div class="movie-info">
     <div class="container-movie-info">
         <img src="{{ 'https://image.tmdb.org/t/p/w154/'.$movie['poster_path'] }}" alt="">
-        <h6>{{ $movie['title'] }}</h6>
+        <h4 class="mt-2 mb-2 font-weight-bold">{{ $movie['title'] }}</h4>
         <div class="flex items-center text-secondary small">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="yellow" width="18px" height="18px">
                 <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
@@ -22,13 +22,13 @@
                 @endforeach
             </span>
         </div>
-        <p>{{ $movie['overview'] }}</p>
+        <p class="mt-2">{{ $movie['overview'] }}</p>
         <div>
-            <p class="semi-bold">Featured Cast</p>
-            <div>
+            <h5 class="semi-bold mt-4">Featured Cast</h5>
+            <div class="feature-cast">
                 @foreach($movie['credits']['crew'] as $crew)
                 @if ($loop->index < 2) <div>{{$crew['name']}}</div>
-            <div>{{$crew['job']}}</div>
+            <div class="text small">{{$crew['job']}}</div>
         </div>
         @endif
 
@@ -37,57 +37,57 @@
         <div>
             @if (count($movie['videos']['results']) > 0)
             <a href="https://www.youtube.com/watch?v={{ $movie['videos']['results'][0]['key'] }}">
-                <button type="submit" class="btn btn-outline-success">Play Trailer</button>
+                <button type="submit" class="play btn btn-outline-success text-center">Play Trailer</button>
             </a>
+            <button type="submit" class="card-add btn btn-outline-danger mb-4 text-center">Add a Card</button>
             @endif
         </div>
 
         <!-- movie cast starts here  -->
 
 
-        <div class="movie-cast">
+        <div class="cast-container">
 
-            <div class="cast-container">
+            <h5 class="semi-bold">Cast</h5>
 
-                <h6>Cast</h6>
+            <div class="grid-cast">
+                @foreach($movie['credits']['cast'] as $cast)
+                @if ($loop->index < 4) <div class="cast-card">
+                    <img src="{{ 'https://image.tmdb.org/t/p/w154/'.$cast['profile_path'] }}" alt="actor">
+                    <div class="font-weight-bold mt-1">{{ $cast['name'] }}</div>
 
-                <div class="grid-cast">
-                    @foreach($movie['credits']['cast'] as $cast)
-                    @if ($loop->index < 4) <a href="#">
-                        <img src="{{ 'https://image.tmdb.org/t/p/w154/'.$cast['profile_path'] }}" alt="actor">
-                        </a>
-                        <a href="#">{{ $cast['name'] }}</a>
-
-                        <div class="text">
-                            {{ $cast['character'] }}
-                        </div>
-                        @endif
-                        @endforeach
-                </div>
+                    <div class="text small">
+                        {{ $cast['character'] }}
+                    </div>
             </div>
-        </div> <!-- end of movie-cast -->
 
-        <div class="movie-images">
+            @endif
+            @endforeach
+        </div>
+    </div>
+    <!-- end of movie-cast -->
 
-            <div class="image-container">
-                <h6>Images</h6>
-                <div class="grid-images">
-                    @foreach($movie['images']['backdrops'] as $image)
-                    @if ($loop->index < 4) <a href="#">
-                        <img src="{{ 'https://image.tmdb.org/t/p/w154/'.$image['file_path'] }}" alt="">
-                        </a>
-                        @endif
-                        @endforeach
-                </div>
+    <div class="movie-images mt-3">
+
+        <div class="image-container">
+            <h5 class="mb-2">Images</h5>
+            <div class="grid-images">
+                @foreach($movie['images']['backdrops'] as $image)
+                @if ($loop->index < 4) <a href="#">
+                    <img class="movie-images" src="{{ 'https://image.tmdb.org/t/p/w300/'.$image['file_path'] }}" width="330px" alt="movie-image">
+                    </a>
+                    @endif
+                    @endforeach
             </div>
         </div>
-
-
-
-
-
-
     </div>
+
+
+
+
+
+
+</div>
 </div>
 
 
