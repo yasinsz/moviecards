@@ -2,13 +2,6 @@
 
 @section('content')
 
-<!-- <section class="webdesigntuts-workshop">
-    <form action="" method="">
-        <input type="search" placeholder="Search for a movie title?">
-        <button>Search</button>
-    </form>
-</section> -->
-
 <div>
 
     <livewire:search-dropdown>
@@ -63,5 +56,4 @@
 
 
 </div>
-
 @endsection
