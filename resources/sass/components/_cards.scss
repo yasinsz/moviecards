@@ -1,61 +1,62 @@
-.container {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    font-family: "Open Sans", "open-sans", sans-serif;
-    letter-spacing: 0.03em;
-    line-height: 1.6;
-    color: black;
-    justify-content: center;
+.card-container {
+    margin: 20px auto;
+    box-shadow: 0 3px 7px -3px black;
+    margin-bottom: 1.6%;
+    line-height: 1.4;
+    font-family: sans-serif;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 0;
+    max-height: 136.25px;
+    min-width: 340px;
 
     .card {
-        width: 300px;
-        height: 400px;
-        border-radius: 8px;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
         position: relative;
-        text-align: center;
-        transition: all 0.25s;
-        margin-bottom: 80px;
-        margin-top: -50px;
-
-        &:hover {
-            top: -15px;
-            box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        h2 {
-            margin-top: 15px;
-            font-weight: 600;
-            text-align: left;
-            margin-left: 1rem;
-        }
-
-        p {
-            font-size: 16px;
-            font-weight: 300;
-            margin-left: 1rem;
-            text-align: left;
-        }
+        z-index: 0;
+        height: 100px;
+        height: auto;
     }
 
-    .card__bookmark {
-        border: 22px solid rgb(182, 182, 182);
-        border-bottom-color: transparent;
-        height: 24px;
-        position: absolute;
-        right: 20px;
+    .card-title {
+        margin-bottom: 30px;
+        margin-left: 110px;
+        font-size: 30px;
     }
 
-    .red {
-        border: 22px solid crimson;
-        border-bottom-color: transparent;
-        height: 24px;
+    .card-info {
+        margin-left: 70px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+        list-style: none;
+    }
+
+    .card-poster {
         position: absolute;
-      
-      }
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 92px;
+    }
+
+    @media (min-width: 7000px) {
+        max-width: 1060px;
+        min-height: 136.25px;
+    }
+}
+
+.card-bookmark {
+    border: 22px solid rgb(182, 182, 182);
+    border-bottom-color: transparent;
+    height: 10px;
+    position: absolute;
+    right: 20px;
+    margin-right: -10px;
+}
+
+.red {
+    border: 22px solid crimson;
+    border-bottom-color: transparent;
+    height: 10px;
+    position: absolute;
 }
