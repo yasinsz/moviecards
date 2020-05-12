@@ -849,23 +849,20 @@ p {
   margin-bottom: 50px;
 }
 
-.container-dropdown {
-  max-width: 800px;
-  padding: 25px;
-  margin: auto;
-}
-
 .dropdown {
   margin-top: 80px;
-  margin-left: -200px;
+  margin-left: -310px;
   align-items: center;
+  max-width: 380px;
+  min-width: 380px;
 }
 
 .drop-list {
   box-sizing: border-box;
-  padding: 1em;
+  padding: 1.5em;
   border-radius: 15px;
   outline: none;
+  margin-left: 30px;
 }
 
 .drop-items {
@@ -873,7 +870,6 @@ p {
   border: 1px solid #ccc;
   margin-top: -1px;
   line-height: 2;
-  padding: 5px 20px;
-  background: white;
+  padding: 10px 16px;
 }
 
