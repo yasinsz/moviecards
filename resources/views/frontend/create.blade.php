@@ -40,16 +40,20 @@
             @enderror
         </div>
 
-
-
         <div class="checkbox">
             <label>
                 <input type="checkbox" checked="checked" /><i class="helper"></i>Watched?
             </label>
         </div>
 
+        <div class="form-group">
+            <label class="control-label" for="input">Image</label><i class="bar"></i>
+            <img class="mt-5" src="https://via.placeholder.com/92x136" />
+            <input type="file">
+        </div>
 
-        <div class="button-container">
+
+        <div class="button-container mb-5">
             <button class="button" type="submit"><span>Save</span></button>
         </div>
 </div>
