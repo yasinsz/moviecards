@@ -43,6 +43,7 @@
 
             <a href="{{url('http://moviecards.test/create')}}">
                 <button type="submit" class="card-add btn btn-outline-danger mb-4 text-center">Create a Card</button>
+            </a>
         </div>
 
         <!-- movie cast starts here  -->
