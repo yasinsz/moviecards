@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Movie;
+use App\Card;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         try {
-            View::share('movie', Movie::all());
+            View::share('card', Card::all());
         } catch (\Exception $e) {
         }
     }

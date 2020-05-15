@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Movie;
+use App\Card;
 use Illuminate\Http\Request;
 
-class MovieController extends Controller
+class CardController extends Controller
 {
 
     /**
@@ -17,7 +17,7 @@ class MovieController extends Controller
     public function index()
     {
         return view('frontend.home', [
-            'movies' => Movie::all(),
+            'cards' => Card::all(),
         ]);
     }
 
@@ -37,11 +37,11 @@ class MovieController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, Movie $movie)
+    public function store(Request $request, Card $card)
     {
         $data = $this->validateData();
 
-        $movie->create($data);
+        $card->create($data);
 
         return redirect()->route('frontend.home');
     }
@@ -52,10 +52,10 @@ class MovieController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Movie  $movie
+     * @param  \App\Card  $card
      * @return \Illuminate\Http\Response
      */
-    public function show(Movie $movie)
+    public function show(Card $card)
     {
         //
     }
@@ -63,7 +63,7 @@ class MovieController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Movie  $movie
+     * @param  \App\Card  $card
      * @return \Illuminate\Http\Response
      */
     public function edit()
@@ -75,7 +75,7 @@ class MovieController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Movie  $movie
+     * @param  \App\Card  $card
      * @return \Illuminate\Http\Response
      */
     public function update()
@@ -87,10 +87,10 @@ class MovieController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Movie  $movie
+     * @param  \App\Card  $card
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Movie $movie)
+    public function destroy(Card $card)
     {
         //
     }

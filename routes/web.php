@@ -62,7 +62,7 @@ Route::get('/search/movies/{movie}', 'SearchController@show')->name('show');
 
 
 //new resource Controller
-Route::resource('/', 'MovieController');
+//Route::resource('/', 'CardController');
 
-Route::post('/',                'MovieController@store')->name('frontend.home.store');
-Route::get('/',                'MovieController@index')->name('frontend.home');
+Route::post('/',                'CardController@store')->name('frontend.home.store');
+Route::get('/',                'CardController@index')->name('frontend.home');

@@ -13,7 +13,7 @@ class CreateMoviesTable extends Migration
      */
     public function up()
     {
-        Schema::create('movies', function (Blueprint $table) {
+        Schema::create('cards', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
             $table->integer('rating');
@@ -30,6 +30,6 @@ class CreateMoviesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('movies');
+        Schema::dropIfExists('cards');
     }
 }

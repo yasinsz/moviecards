@@ -32,29 +32,17 @@ class SearchController extends Controller
         return view('frontend.search.index', ['popularMovies' => $popularMovies, 'genres' => $genres]);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    // public function create()
-    // {
-    //     $movie = Datenbank::where
-    //     return view('frontend.home');
-    // }
+    public function create()
+    {
+        //
+    }
+
+
 
     /**
      * Store a newly created resource in storage.
@@ -62,27 +50,10 @@ class SearchController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    // public function store(Request $request, Movie $movie)
-    // {
-    //     $data = $this->validateData();
-
-    //     return view('frontend.home');
-    // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public function store(Request $request)
+    {
+        // 
+    }
 
 
     /**
@@ -135,15 +106,5 @@ class SearchController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    private function validateData()
-    {
-        return request()->validate([
-            'title' => 'required',
-            'rating' => 'required',
-            'date' => 'required',
-            'genre' => 'required',
-        ]);
     }
 }
