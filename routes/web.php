@@ -50,3 +50,19 @@ Route::get('/login', function () {
 Route::get('/search', 'SearchController@index')->name('index');
 
 Route::get('/search/movies/{movie}', 'SearchController@show')->name('show');
+
+
+
+// Routes for my add a card function
+
+//Route::post('/',                'SearchController@store')->name('store');
+
+//Route::patch('/update',            'SearchController@update')->name('update');
+
+
+
+//new resource Controller
+Route::resource('/', 'MovieController');
+
+Route::post('/',                'MovieController@store')->name('frontend.home.store');
+Route::get('/',                'MovieController@index')->name('frontend.home');

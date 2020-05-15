@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Movie;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
@@ -31,15 +32,29 @@ class SearchController extends Controller
         return view('frontend.search.index', ['popularMovies' => $popularMovies, 'genres' => $genres]);
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
-    }
+    // public function create()
+    // {
+    //     $movie = Datenbank::where
+    //     return view('frontend.home');
+    // }
 
     /**
      * Store a newly created resource in storage.
@@ -47,10 +62,28 @@ class SearchController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
+    // public function store(Request $request, Movie $movie)
+    // {
+    //     $data = $this->validateData();
+
+    //     return view('frontend.home');
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /**
      * Display the specified resource.
@@ -90,7 +123,7 @@ class SearchController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        return redirect()->route('/update');
     }
 
     /**
@@ -102,5 +135,15 @@ class SearchController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    private function validateData()
+    {
+        return request()->validate([
+            'title' => 'required',
+            'rating' => 'required',
+            'date' => 'required',
+            'genre' => 'required',
+        ]);
     }
 }

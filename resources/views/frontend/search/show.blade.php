@@ -39,8 +39,10 @@
             <a href="https://www.youtube.com/watch?v={{ $movie['videos']['results'][0]['key'] }}">
                 <button type="submit" class="play btn btn-outline-success text-center">Play Trailer</button>
             </a>
-            <button type="submit" class="card-add btn btn-outline-danger mb-4 text-center">Add a Card</button>
             @endif
+
+            <a href="{{url('http://moviecards.test/create')}}">
+                <button type="submit" class="card-add btn btn-outline-danger mb-4 text-center">Create a Card</button>
         </div>
 
         <!-- movie cast starts here  -->
