@@ -7,6 +7,7 @@
 <div class="movie-info">
     <div class="container-movie-info">
         <img src="{{ 'https://image.tmdb.org/t/p/w154/'.$movie['poster_path'] }}" alt="">
+        <input type="text" class="" value="{{ 'https://image.tmdb.org/t/p/w154/'.$movie['poster_path'] }}" value="">
         <h4 class="mt-2 mb-2 font-weight-bold">{{ $movie['title'] }}</h4>
         <div class="flex items-center text-secondary small">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="yellow" width="18px" height="18px">

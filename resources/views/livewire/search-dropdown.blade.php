@@ -2,8 +2,8 @@
 
     <div class="row-dropdown">
 
-        <div class="relative d-flex justify-content-center">
-            <input wire:model.debounce.500ms="search" type="text" class="bg-danger rounded-full mt-5 mb-4" placeholder="Search...">
+        <div class="relative d-flex flex-wrap justify-content-center">
+            <input wire:model.debounce.500ms="search" type="text" class="search-button bg-danger rounded-full mt-5 mb-4" placeholder="Search...">
 
 
             @if (strlen($search) >= 2)
