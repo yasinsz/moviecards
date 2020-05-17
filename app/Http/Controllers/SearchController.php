@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Movie;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
@@ -41,6 +42,8 @@ class SearchController extends Controller
         //
     }
 
+
+
     /**
      * Store a newly created resource in storage.
      *
@@ -49,8 +52,9 @@ class SearchController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // 
     }
+
 
     /**
      * Display the specified resource.
@@ -90,7 +94,7 @@ class SearchController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        return redirect()->route('/update');
     }
 
     /**

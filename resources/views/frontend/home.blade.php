@@ -2,42 +2,20 @@
 
 @section('content')
 
+
 <div class="card-container">
+    @foreach($cards as $card)
     <div class="card">
         <span class="card-bookmark"></span>
-        <img class="card-poster" src="https://images-na.ssl-images-amazon.com/images/I/71wbalyU7tL._AC_SL1481_.jpg"></img>
-        <a class="card-title">Joker</a>
+        <img class="card-poster" src="{{ $card->imageUrl() }}"></img>
+        <a class="card-title">{{ $card->title }}</a>
         <ul class="card-info">
-            <li>Rating: 8/10</li>
-            <li>2019</li>
-            <li>Drama/Krimi</li>
+            <li>{{ $card->rating }}</li>
+            <li>{{ $card->date }}</li>
+            <li>{{ $card->genre }}</li>
         </ul>
     </div>
-
-
-    <div class="card">
-        <span class="card-bookmark"></span>
-        <img class="card-poster" src="https://images-na.ssl-images-amazon.com/images/I/71wbalyU7tL._AC_SL1481_.jpg"></img>
-        <a class="card-title">Joker</a>
-        <ul class="card-info">
-            <li>Rating: 8/10</li>
-            <li>2019</li>
-            <li>Drama/Krimi</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <span class="card-bookmark"></span>
-        <img class="card-poster" src="https://images-na.ssl-images-amazon.com/images/I/71wbalyU7tL._AC_SL1481_.jpg"></img>
-        <a class="card-title">Joker</a>
-        <ul class="card-info">
-            <li>Rating: 8/10</li>
-            <li>2019</li>
-            <li>Drama/Krimi</li>
-        </ul>
-    </div>
-
-
+    @endforeach
 </div>
 
 

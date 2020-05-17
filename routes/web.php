@@ -36,17 +36,9 @@ Route::get('/login', function () {
 
 
 
-
-
-// Route::get('/search', function () {
-//     return view('frontend.search.search');
-// });
-
-// Route::get('/search/movie', function () {
-//     return view('frontend.search.show');
-// });
-
-
 Route::get('/search', 'SearchController@index')->name('index');
-
 Route::get('/search/movies/{movie}', 'SearchController@show')->name('show');
+
+
+Route::post('/',                'CardController@store')->name('frontend.home.store');
+Route::get('/',                'CardController@index')->name('frontend.home');
