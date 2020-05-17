@@ -19333,7 +19333,23 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+var cards = getAll(".card");
+cards.forEach(function (card) {
+  var bookmark = get(".card-bookmark", card);
+  bookmark.addEventListener("click", function () {
+    bookmark.classList.toggle("red");
+  });
+});
 
+function get(sel) {
+  var target = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : document;
+  return target.querySelector(sel);
+}
+
+function getAll(sel) {
+  var target = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : document;
+  return target.querySelectorAll(sel);
+}
 
 /***/ }),
 

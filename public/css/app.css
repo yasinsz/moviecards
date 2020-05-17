@@ -125,6 +125,7 @@ body {
   position: absolute;
   right: 20px;
   margin-right: -10px;
+  margin-top: -4px;
 }
 
 .card-container .red {
