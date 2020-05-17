@@ -41,6 +41,12 @@ class CardController extends Controller
     {
         $data = $this->validateData();
 
+        if ($request->has('image')) {
+            $path = $request->file('image')->store('/cards/images', 'public');
+            $data['image'] = $path;
+            //$data->save();
+        }
+
         $card->create($data);
 
         return redirect()->route('frontend.home');
@@ -102,6 +108,7 @@ class CardController extends Controller
             'rating' => 'required',
             'date' => 'required',
             'genre' => 'required',
+            'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
         ]);
     }
 }

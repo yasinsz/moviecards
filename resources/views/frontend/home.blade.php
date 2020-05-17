@@ -7,7 +7,7 @@
     @foreach($cards as $card)
     <div class="card">
         <span class="card-bookmark"></span>
-        <img class="card-poster" src="https://images-na.ssl-images-amazon.com/images/I/71wbalyU7tL._AC_SL1481_.jpg"></img>
+        <img class="card-poster" src="{{ $card->imageUrl() }}"></img>
         <a class="card-title">{{ $card->title }}</a>
         <ul class="card-info">
             <li>{{ $card->rating }}</li>

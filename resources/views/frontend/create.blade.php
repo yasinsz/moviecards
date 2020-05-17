@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container">
-    <form class="tile" method="POST" action="{{ route('frontend.home.store') }}">
+    <form class="tile" method="POST" action="{{ route('frontend.home.store') }}" enctype="multipart/form-data">
         @csrf
 
         <h3>Create a movie card</h3>
@@ -49,7 +49,7 @@
         <div class="form-group">
             <label class="control-label" for="input">Image</label><i class="bar"></i>
             <img class="mt-5" src="https://via.placeholder.com/92x136" />
-            <input type="file">
+            <input type="file" name="image">
         </div>
 
 
