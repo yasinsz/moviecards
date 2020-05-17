@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
-$body-bg: #fff;
+$body-bg: rgb(0, 0, 0);
 
 // Font Sizes
 $mf-font-size: 1rem !default;
@@ -15,7 +15,7 @@ $mf-checkbox-top: 0 !default;
 $mf-radio-margin: $mf-font-size / -4 !default;
 
 // Colors
-$mf-input-color: #333 !default;
+$mf-input-color: white !default;
 $mf-border-color: #999 !default;
 $mf-label-color: lighten($mf-border-color, 10%) !default;
 $mf-active-color: darken($mf-border-color, 10%) !default;
@@ -23,6 +23,10 @@ $mf-focus-color: red !default;
 $mf-error-color: #d9534f !default;
 
 // Animation
+.create-form {
+    margin-top: -45px;
+}
+
 $mf-transition-speed: 0.28s !default;
 
 input,
