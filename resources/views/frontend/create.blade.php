@@ -9,7 +9,7 @@
         <h4 class="text-white mt-1">Create a movie card</h4>
 
         <div class="form-group">
-            <input type="text" required="required" @error('name') is-invalid @enderror" type="text" name="title" value="{{ old('title') }}">
+            <input type="text" required="required" @error('name') is-invalid @enderror" type="text" name="title" value="">
             <label class="control-label" for="input">Movie title</label><i class="bar"></i>
             @error('title')
             <p class="invalid-feedback">{{ $errors->first('title') }}</p>

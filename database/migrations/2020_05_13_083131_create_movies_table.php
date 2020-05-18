@@ -16,8 +16,8 @@ class CreateMoviesTable extends Migration
         Schema::create('cards', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            $table->integer('vote_average');
-            $table->year('release_date');
+            $table->decimal('vote_average', 2, 1)->default(0);
+            $table->date('release_date');
             $table->string('name');
             $table->string('poster_path')->nullable();
             $table->timestamps();

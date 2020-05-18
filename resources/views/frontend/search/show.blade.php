@@ -7,7 +7,6 @@
 <div class="movie-info">
     <div class="container-movie-info">
         <img src="{{ 'https://image.tmdb.org/t/p/w154/'.$movie['poster_path'] }}" alt="">
-        <input type="text" class="" value="{{ 'https://image.tmdb.org/t/p/w154/'.$movie['poster_path'] }}" value="">
         <h4 class="mt-2 mb-2 font-weight-bold text-white">{{ $movie['title'] }}</h4>
         <div class="flex items-center text-secondary small">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="yellow" width="18px" height="18px">
@@ -38,13 +37,14 @@
         <div>
             @if (count($movie['videos']['results']) > 0)
             <a href="https://www.youtube.com/watch?v={{ $movie['videos']['results'][0]['key'] }}">
-                <button type="submit" class="play btn btn-outline-success text-center">Play Trailer</button>
+                <button type="submit" class="play btn btn-outline-success mt-4 text-center">Play Trailer</button>
             </a>
             @endif
 
-            <a href="{{url('http://moviecards.test/create')}}">
+            <form class="add-form" method="POST" action="{{ route('frontend.home.store', ['title' => $movie['title'], 'vote_average' => $movie['vote_average'], 'release_date' => $movie['release_date'], 'name' => $genre['name']]) }}" enctype="multipart/form-data">
+                @csrf
                 <button type="submit" class="card-add btn btn-outline-danger mb-4 text-center">Create a Card</button>
-            </a>
+            </form>
         </div>
 
         <!-- movie cast starts here  -->
