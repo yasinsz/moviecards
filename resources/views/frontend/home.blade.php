@@ -10,9 +10,9 @@
         <img class="card-poster" src="{{ $card->imageUrl() }}"></img>
         <a class="card-title">{{ $card->title }}</a>
         <ul class="card-info">
-            <li>{{ $card->rating }}</li>
-            <li>{{ $card->date }}</li>
-            <li>{{ $card->genre }}</li>
+            <li>{{ $card->vote_average }}</li>
+            <li>{{ $card->release_date }}</li>
+            <li>{{ $card->name }}</li>
         </ul>
     </div>
     @endforeach
@@ -20,6 +20,5 @@
         {{ $cards->links() }}
     </div>
 </div>
-
 
 @endsection

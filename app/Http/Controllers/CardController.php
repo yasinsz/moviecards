@@ -48,9 +48,9 @@ class CardController extends Controller
     {
         $data = $this->validateData();
 
-        if ($request->has('image')) {
-            $path = $request->file('image')->store('/cards/images', 'public');
-            $data['image'] = $path;
+        if ($request->has('poster_path')) {
+            $path = $request->file('poster_path')->store('/cards/images', 'public');
+            $data['poster_path'] = $path;
             //$data->save();
         }
 
@@ -112,10 +112,10 @@ class CardController extends Controller
     {
         return request()->validate([
             'title' => 'required',
-            'rating' => 'required',
-            'date' => 'required',
-            'genre' => 'required',
-            'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
+            'vote_average' => 'required',
+            'release_date' => 'required',
+            'name' => 'required',
+            'poster_path' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
         ]);
     }
 }

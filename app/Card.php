@@ -7,13 +7,13 @@ use Illuminate\Support\Facades\Storage;
 
 class Card extends Model
 {
-    protected $fillable = ['title', 'rating', 'date', 'genre', 'image'];
+    protected $fillable = ['title', 'vote_average', 'release_date', 'name', 'poster_path'];
 
 
     public function imageUrl()
     {
-        if ($this->image) {
-            return Storage::url($this->image);
+        if ($this->poster_path) {
+            return Storage::url($this->poster_path);
         }
 
         return 'https://via.placeholder.com/92x136';
