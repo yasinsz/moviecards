@@ -17,7 +17,14 @@ class CardController extends Controller
     public function index()
     {
         return view('frontend.home', [
-            'cards' => Card::all(),
+            'cards' => Card::paginate(4),
+        ]);
+    }
+
+    public function currentPage()
+    {
+        return view('frontend.home', [
+            'cards' => Card::currentPage()
         ]);
     }
 

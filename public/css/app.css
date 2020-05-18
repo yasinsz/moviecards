@@ -12,7 +12,7 @@ body {
   margin-top: 50px;
   padding: 0;
   top: 100px;
-  background-color: #ffffff;
+  background-color: #000000;
   font-family: Helvetica;
   display: grid;
   grid-template-rows: 1fr max 1fr;
@@ -93,8 +93,8 @@ body {
   position: relative;
   height: 100px;
   height: auto;
-  box-shadow: 0 3px 7px -3px black;
-  max-height: 136.25px;
+  box-shadow: 0 3px 10px 4px crimson;
+  max-height: 138px;
 }
 
 .card-container .card-title {
@@ -125,6 +125,7 @@ body {
   position: absolute;
   right: 20px;
   margin-right: -10px;
+  margin-top: -4px;
 }
 
 .card-container .red {
@@ -134,6 +135,39 @@ body {
   position: absolute;
 }
 
+.pagination > li > a {
+  background-color: white;
+  color: black;
+  margin-bottom: 60px;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  color: white;
+  background-color: crimson;
+  border-color: black;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: crimson !important;
+  border-color: lightgray !important;
+}
+
+.pagination > .active > a {
+  color: black;
+  background-color: crimson;
+  border: solid 1px crimson;
+}
+
+.pagination > .active > a:hover {
+  background-color: crimson;
+  border: solid 1px crimson;
+}
+
 .page-container {
   margin: 120px auto 0 auto;
 }
@@ -414,6 +448,10 @@ button:active {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.create-form {
+  margin-top: -45px;
 }
 
 input,
@@ -447,7 +485,7 @@ h3 {
   position: relative;
   max-width: 40rem;
   margin: 5rem auto;
-  background: #fff;
+  background: black;
   padding: 0;
   border-radius: 1px;
 }
@@ -554,7 +592,7 @@ fieldset {
   left: 50%;
   bottom: -0.0625rem;
   position: absolute;
-  background: red;
+  background: #e50914;
   transition: left 0.28s ease, width 0.28s ease;
   z-index: 2;
 }
@@ -591,7 +629,7 @@ fieldset {
 .form-group textarea:valid,
 .form-group textarea.form-file,
 .form-group textarea.has-value {
-  color: #333;
+  color: white;
 }
 
 .form-group select ~ .control-label,
@@ -618,7 +656,7 @@ fieldset {
 .form-group select:focus ~ .control-label,
 .form-group input:focus ~ .control-label,
 .form-group textarea:focus ~ .control-label {
-  color: red;
+  color: #e50914;
 }
 
 .form-group select:focus ~ .bar::before,
@@ -633,7 +671,7 @@ fieldset {
   cursor: pointer;
   padding-left: 2rem;
   text-align: left;
-  color: #333;
+  color: white;
   display: block;
 }
 
@@ -667,7 +705,7 @@ fieldset {
   position: absolute;
   height: 0;
   width: 0.2rem;
-  background-color: red;
+  background-color: #e50914;
   display: block;
   transform-origin: left top;
   border-radius: 0.25rem;
@@ -680,7 +718,7 @@ fieldset {
   top: 0.65rem;
   left: 0.38rem;
   transform: rotate(-135deg);
-  box-shadow: 0 0 0 0.0625rem #fff;
+  box-shadow: 0 0 0 0.0625rem black;
 }
 
 .checkbox .helper::after {
@@ -690,11 +728,11 @@ fieldset {
 }
 
 .checkbox label:hover .helper {
-  color: red;
+  color: #e50914;
 }
 
 .checkbox input:checked ~ .helper {
-  color: red;
+  color: #e50914;
 }
 
 .checkbox input:checked ~ .helper::after,
@@ -718,18 +756,18 @@ fieldset {
 
 .has-error .legend.legend,
 .has-error.form-group .control-label.control-label {
-  color: #d9534f;
+  color: #e50914;
 }
 
 .has-error.form-group .form-help,
 .has-error.form-group .helper,
 .has-error.checkbox .form-help,
 .has-error.checkbox .helper {
-  color: #d9534f;
+  color: #e50914;
 }
 
 .has-error .bar::before {
-  background: #d9534f;
+  background: #e50914;
   left: 0;
   width: 100%;
 }
@@ -739,9 +777,9 @@ fieldset {
   background: currentColor;
   border: 1px solid currentColor;
   font-size: 1.1rem;
-  color: #ff3333;
-  margin: 3rem 0;
-  padding: 0.75rem 3rem;
+  color: #f72a35;
+  margin-top: 35px;
+  margin-bottom: 35px;
   cursor: pointer;
   transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
   overflow: hidden;
@@ -756,8 +794,8 @@ fieldset {
 .button::before {
   content: "";
   position: absolute;
-  background: #330000;
-  border: 50vh solid #990000;
+  background: #210103;
+  border: 50vh solid #83050b;
   width: 30vh;
   height: 30vh;
   border-radius: 50%;
@@ -770,7 +808,7 @@ fieldset {
 }
 
 .button:hover {
-  color: red;
+  color: #e50914;
 }
 
 .button:active::before,
@@ -786,6 +824,11 @@ fieldset {
 
 .grid-container {
   display: grid;
+}
+
+.search-button {
+  width: 320px;
+  background-color: crimson;
 }
 
 .grid-row {
@@ -806,6 +849,7 @@ h6 {
   padding-left: 20px;
   margin-top: 20px;
   margin-bottom: 15px;
+  color: whitesmoke;
 }
 
 .container-movie-info {
@@ -851,11 +895,8 @@ p {
 }
 
 .dropdown {
-  margin-top: 80px;
-  margin-left: -310px;
+  margin-top: -35px;
   align-items: center;
-  max-width: 380px;
-  min-width: 380px;
 }
 
 .drop-list {
@@ -863,10 +904,10 @@ p {
   padding: 1.5em;
   border-radius: 15px;
   outline: none;
-  margin-left: 30px;
 }
 
 .drop-items {
+  background-color: crimson;
   list-style: none;
   border: 1px solid #ccc;
   margin-top: -1px;

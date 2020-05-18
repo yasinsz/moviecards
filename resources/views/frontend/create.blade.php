@@ -3,10 +3,10 @@
 @section('content')
 
 <div class="container">
-    <form class="tile" method="POST" action="{{ route('frontend.home.store') }}" enctype="multipart/form-data">
+    <form class="tile create-form" method="POST" action="{{ route('frontend.home.store') }}" enctype="multipart/form-data">
         @csrf
 
-        <h3>Create a movie card</h3>
+        <h4 class="text-white mt-1">Create a movie card</h4>
 
         <div class="form-group">
             <input type="text" required="required" @error('name') is-invalid @enderror" type="text" name="title" value="{{ old('title') }}">

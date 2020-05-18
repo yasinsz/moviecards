@@ -7,7 +7,8 @@
 <div class="movie-info">
     <div class="container-movie-info">
         <img src="{{ 'https://image.tmdb.org/t/p/w154/'.$movie['poster_path'] }}" alt="">
-        <h4 class="mt-2 mb-2 font-weight-bold">{{ $movie['title'] }}</h4>
+        <input type="text" class="" value="{{ 'https://image.tmdb.org/t/p/w154/'.$movie['poster_path'] }}" value="">
+        <h4 class="mt-2 mb-2 font-weight-bold text-white">{{ $movie['title'] }}</h4>
         <div class="flex items-center text-secondary small">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="yellow" width="18px" height="18px">
                 <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
@@ -22,13 +23,13 @@
                 @endforeach
             </span>
         </div>
-        <p class="mt-2">{{ $movie['overview'] }}</p>
+        <p class="mt-2 text-white">{{ $movie['overview'] }}</p>
         <div>
-            <h5 class="semi-bold mt-4">Featured Cast</h5>
-            <div class="feature-cast">
+            <h5 class="semi-bold mt-4 text-white">Featured Cast</h5>
+            <div class="feature-cast text-white">
                 @foreach($movie['credits']['crew'] as $crew)
-                @if ($loop->index < 2) <div>{{$crew['name']}}</div>
-            <div class="text small">{{$crew['job']}}</div>
+                @if ($loop->index < 2) <div class="text-white">{{$crew['name']}}</div>
+            <div class="text small text-secondary">{{$crew['job']}}</div>
         </div>
         @endif
 
@@ -51,15 +52,15 @@
 
         <div class="cast-container">
 
-            <h5 class="semi-bold">Cast</h5>
+            <h5 class="semi-bold text-white">Cast</h5>
 
             <div class="grid-cast">
                 @foreach($movie['credits']['cast'] as $cast)
                 @if ($loop->index < 4) <div class="cast-card">
                     <img src="{{ 'https://image.tmdb.org/t/p/w154/'.$cast['profile_path'] }}" alt="actor">
-                    <div class="font-weight-bold mt-1">{{ $cast['name'] }}</div>
+                    <div class="font-weight-bold mt-1 text-white">{{ $cast['name'] }}</div>
 
-                    <div class="text small">
+                    <div class="text small text-secondary">
                         {{ $cast['character'] }}
                     </div>
             </div>
@@ -73,7 +74,7 @@
     <div class="movie-images mt-3">
 
         <div class="image-container">
-            <h5 class="mb-2">Images</h5>
+            <h5 class="mb-2 text-white">Images</h5>
             <div class="grid-images">
                 @foreach($movie['images']['backdrops'] as $image)
                 @if ($loop->index < 4) <a href="#">

@@ -2,8 +2,8 @@
 
     <div class="row-dropdown">
 
-        <div class="relative d-flex justify-content-center">
-            <input wire:model.debounce.500ms="search" type="text" class="bg-danger rounded-full mt-5 mb-4" placeholder="Search...">
+        <div class="relative d-flex flex-wrap justify-content-center">
+            <input wire:model.debounce.500ms="search" type="text" class="search-button rounded-full mt-5 mb-4" placeholder="Search...">
 
 
             @if (strlen($search) >= 2)
@@ -12,7 +12,7 @@
                 @if ($searchResults->count() > 0)
                 <ul class=" drop-list">
                     @foreach ($searchResults as $result)
-                    <li class="drop-items bg-danger">
+                    <li class="drop-items">
                         <a href=" {{ route('show', $result['id']) }}">
 
                             @if ($result['poster_path'])
