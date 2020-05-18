@@ -93,7 +93,7 @@ body {
   position: relative;
   height: 100px;
   height: auto;
-  box-shadow: 0 3px 10px 4px #b83232;
+  box-shadow: 0 3px 10px 4px crimson;
   max-height: 138px;
 }
 
@@ -133,6 +133,32 @@ body {
   border-bottom-color: transparent;
   height: 10px;
   position: absolute;
+}
+
+.pagination > li > a {
+  background-color: white;
+  color: black;
+  margin-bottom: 60px;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  color: white;
+  background-color: crimson;
+  border-color: black;
+}
+
+.pagination > .active > a {
+  color: black;
+  background-color: crimson;
+  border: solid 1px crimson;
+}
+
+.pagination > .active > a:hover {
+  background-color: crimson;
+  border: solid 1px crimson;
 }
 
 .page-container {
@@ -559,7 +585,7 @@ fieldset {
   left: 50%;
   bottom: -0.0625rem;
   position: absolute;
-  background: red;
+  background: #e50914;
   transition: left 0.28s ease, width 0.28s ease;
   z-index: 2;
 }
@@ -623,7 +649,7 @@ fieldset {
 .form-group select:focus ~ .control-label,
 .form-group input:focus ~ .control-label,
 .form-group textarea:focus ~ .control-label {
-  color: red;
+  color: #e50914;
 }
 
 .form-group select:focus ~ .bar::before,
@@ -672,7 +698,7 @@ fieldset {
   position: absolute;
   height: 0;
   width: 0.2rem;
-  background-color: red;
+  background-color: #e50914;
   display: block;
   transform-origin: left top;
   border-radius: 0.25rem;
@@ -695,11 +721,11 @@ fieldset {
 }
 
 .checkbox label:hover .helper {
-  color: red;
+  color: #e50914;
 }
 
 .checkbox input:checked ~ .helper {
-  color: red;
+  color: #e50914;
 }
 
 .checkbox input:checked ~ .helper::after,
@@ -723,18 +749,18 @@ fieldset {
 
 .has-error .legend.legend,
 .has-error.form-group .control-label.control-label {
-  color: #d9534f;
+  color: #e50914;
 }
 
 .has-error.form-group .form-help,
 .has-error.form-group .helper,
 .has-error.checkbox .form-help,
 .has-error.checkbox .helper {
-  color: #d9534f;
+  color: #e50914;
 }
 
 .has-error .bar::before {
-  background: #d9534f;
+  background: #e50914;
   left: 0;
   width: 100%;
 }
@@ -744,9 +770,9 @@ fieldset {
   background: currentColor;
   border: 1px solid currentColor;
   font-size: 1.1rem;
-  color: #ff3333;
-  margin: 3rem 0;
-  padding: 0.75rem 3rem;
+  color: #f72a35;
+  margin-top: 35px;
+  margin-bottom: 35px;
   cursor: pointer;
   transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
   overflow: hidden;
@@ -761,8 +787,8 @@ fieldset {
 .button::before {
   content: "";
   position: absolute;
-  background: #330000;
-  border: 50vh solid #990000;
+  background: #210103;
+  border: 50vh solid #83050b;
   width: 30vh;
   height: 30vh;
   border-radius: 50%;
@@ -775,7 +801,7 @@ fieldset {
 }
 
 .button:hover {
-  color: red;
+  color: #e50914;
 }
 
 .button:active::before,
@@ -795,6 +821,7 @@ fieldset {
 
 .search-button {
   width: 320px;
+  background-color: crimson;
 }
 
 .grid-row {
@@ -873,6 +900,7 @@ p {
 }
 
 .drop-items {
+  background-color: crimson;
   list-style: none;
   border: 1px solid #ccc;
   margin-top: -1px;

@@ -16,6 +16,9 @@
         </ul>
     </div>
     @endforeach
+    <div class="pagination justify-content-center">
+        {{ $cards->links() }}
+    </div>
 </div>
 
 

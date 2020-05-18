@@ -19,8 +19,8 @@ $mf-input-color: white !default;
 $mf-border-color: #999 !default;
 $mf-label-color: lighten($mf-border-color, 10%) !default;
 $mf-active-color: darken($mf-border-color, 10%) !default;
-$mf-focus-color: red !default;
-$mf-error-color: #d9534f !default;
+$mf-focus-color: #e50914 !default;
+$mf-error-color: #e50914 !default;
 
 // Animation
 .create-form {
@@ -359,8 +359,10 @@ fieldset {
     border: 1px solid currentColor;
     font-size: ($mf-font-size * 1.1);
     color: lighten($mf-focus-color, 10%);
-    margin: ($mf-gap * 2) 0;
-    padding: ($mf-gap / 2) ($mf-gap * 2);
+    //margin: ($mf-gap * 2) 0;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    //padding: ($mf-gap / 2) ($mf-gap * 2);
     cursor: pointer;
     transition: background-color $mf-transition-speed ease,
         color $mf-transition-speed ease, box-shadow $mf-transition-speed ease;
