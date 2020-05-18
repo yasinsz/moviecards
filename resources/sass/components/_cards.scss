@@ -80,6 +80,13 @@
     border-color: black;
 }
 
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: crimson !important;
+    border-color: lightgray !important;
+}
+
 .pagination > .active > a {
     color: black;
     background-color: crimson;
