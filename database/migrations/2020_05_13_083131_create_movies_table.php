@@ -16,10 +16,10 @@ class CreateMoviesTable extends Migration
         Schema::create('cards', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            $table->integer('rating');
-            $table->year('date');
-            $table->string('genre');
-            $table->string('image')->nullable();
+            $table->decimal('vote_average', 2, 1)->default(0);
+            $table->date('release_date');
+            $table->string('name');
+            $table->string('poster_path')->nullable();
             $table->timestamps();
         });
     }

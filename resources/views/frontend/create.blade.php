@@ -9,7 +9,7 @@
         <h4 class="text-white mt-1">Create a movie card</h4>
 
         <div class="form-group">
-            <input type="text" required="required" @error('name') is-invalid @enderror" type="text" name="title" value="{{ old('title') }}">
+            <input type="text" required="required" @error('name') is-invalid @enderror" type="text" name="title" value="">
             <label class="control-label" for="input">Movie title</label><i class="bar"></i>
             @error('title')
             <p class="invalid-feedback">{{ $errors->first('title') }}</p>
@@ -17,25 +17,25 @@
         </div>
 
         <div class="form-group">
-            <input type="text" required="required" @error('rating') is-invalid @enderror" rows="3" name="rating">{{ old('rating') }}</input>
+            <input type="text" required="required" @error('average_voting') is-invalid @enderror" rows="3" name="vote_average">{{ old('vote_average') }}</input>
             <label class="control-label" for="input">Rating</label><i class="bar"></i>
-            @error('rating')
-            <p class="invalid-feedback">{{ $errors->first('rating') }}</p>
+            @error('vote_average')
+            <p class="invalid-feedback">{{ $errors->first('vote_average') }}</p>
             @enderror
         </div>
 
         <div class="form-group">
-            <input type="text" required="required" @error('date') is-invalid @enderror" type="text" name="date" value="{{ old('date') }}">
+            <input type="text" required="required" @error('release_date') is-invalid @enderror" type="text" name="release_date" value="{{ old('release_date') }}">
             <label class="control-label" for="input">Year</label><i class="bar"></i>
-            @error('date')
-            <p class="invalid-feedback">{{ $errors->first('date') }}</p>
+            @error('release_date')
+            <p class="invalid-feedback">{{ $errors->first('release_date') }}</p>
             @enderror
         </div>
 
         <div class="form-group">
-            <input type="text" required="required" @error('genre') is-invalid @enderror" type="text" name="genre" value="{{ old('genre') }}">
+            <input type="text" required="required" @error('name') is-invalid @enderror" type="text" name="name" value="{{ old('name') }}">
             <label class="control-label" for="input">Genre</label><i class="bar"></i>
-            @error('genre')
+            @error('name')
             <p class="invalid-feedback">{{ $errors->first('genre') }}</p>
             @enderror
         </div>
@@ -49,7 +49,7 @@
         <div class="form-group">
             <label class="control-label" for="input">Image</label><i class="bar"></i>
             <img class="mt-5" src="https://via.placeholder.com/92x136" />
-            <input type="file" name="image">
+            <input type="file" name="poster_path">
         </div>
 
 
