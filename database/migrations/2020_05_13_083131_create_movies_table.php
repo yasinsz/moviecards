@@ -20,6 +20,7 @@ class CreateMoviesTable extends Migration
             $table->date('release_date');
             $table->string('name');
             $table->string('poster_path')->nullable();
+            $table->boolean('bookmarked')->default(false);
             $table->timestamps();
         });
     }
