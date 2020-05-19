@@ -41,7 +41,13 @@
             </a>
             @endif
 
-            <form class="add-form" method="POST" action="{{ route('frontend.home.store', ['title' => $movie['title'], 'vote_average' => $movie['vote_average'], 'release_date' => $movie['release_date'], 'name' => $genre['name']]) }}" enctype="multipart/form-data">
+            <form class="add-form" method="POST" action="{{ route('frontend.home.store', [
+                  'title' => $movie['title'],
+                  'vote_average' => $movie['vote_average'],
+                  'release_date' => $movie['release_date'],
+                  'name' => $genre['name'],
+                  'poster_path' => 'https://image.tmdb.org/t/p/w154/'.$movie['poster_path']
+                ]) }}" enctype="multipart/form-data">
                 @csrf
                 <button type="submit" class="card-add btn btn-outline-danger mb-4 text-center">Create a Card</button>
             </form>
