@@ -32,6 +32,10 @@
         margin-left: 110px;
         font-size: 26px;
         margin-top: 12px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 175px;
     }
 
     .card-info {
@@ -51,7 +55,7 @@
     }
 
     .card-bookmark {
-        border: 22px solid white;
+        border: 22px solid rgba(245, 245, 245, 0.883);
         border-bottom-color: transparent;
         height: 10px;
         position: absolute;

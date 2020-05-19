@@ -47,8 +47,6 @@ class CardController extends Controller
     public function store(Request $request, Card $card)
     {
 
-
-
         $data = $this->validateData();
 
         // if ($request->has('poster_path')) {
