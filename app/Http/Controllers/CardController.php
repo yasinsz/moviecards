@@ -47,16 +47,14 @@ class CardController extends Controller
     public function store(Request $request, Card $card)
     {
 
-
-
         $data = $this->validateData();
 
-        if ($request->has('poster_path')) {
-            $path = $request->get('poster_path');
-            // $path->urlencode();
-            $data['poster_path'] = $path;
-            //$data->save();
-        }
+        // if ($request->has('poster_path')) {
+        //     $path = $request->get('poster_path');
+        //     // $path->urlencode();
+        //     $data['poster_path'] = $path;
+        //     //$data->save();
+        // }
 
         $card->create($data);
 
@@ -119,7 +117,7 @@ class CardController extends Controller
             'vote_average' => 'required',
             'release_date' => 'required',
             'name' => 'required',
-            // 'poster_path' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
+            'poster_path' => 'required'
         ]);
     }
 }

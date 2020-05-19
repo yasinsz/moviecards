@@ -92,21 +92,34 @@ body {
   position: relative;
   height: 100px;
   height: auto;
-  box-shadow: 0 3px 10px 4px crimson;
   max-height: 138px;
   max-width: 340px;
+  background-color: #1c1c1cd9;
+  color: #fff;
+  border: 1px solid #393939;
 }
 
 .card-container .card-title {
-  margin-bottom: 30px;
+  margin-bottom: 18px;
   margin-left: 110px;
-  font-size: 30px;
+  font-size: 26px;
+  margin-top: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 175px;
+}
+
+.card-container .star-svg {
+  margin-top: -4px;
+  margin-right: 3px;
 }
 
 .card-container .card-info {
   margin-left: 70px;
   margin-top: -10px;
   list-style: none;
+  color: #acacac;
 }
 
 .card-container .card-poster {
@@ -119,11 +132,11 @@ body {
 }
 
 .card-container .card-bookmark {
-  border: 22px solid #b6b6b6;
+  border: 22px solid rgba(245, 245, 245, 0.883);
   border-bottom-color: transparent;
   height: 10px;
   position: absolute;
-  right: 20px;
+  right: 18px;
   margin-right: -10px;
   margin-top: -4px;
 }
