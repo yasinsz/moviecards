@@ -2,6 +2,8 @@
 
 @section('content')
 
+<?php /* I dont need this page anymore
+
 <div class="container">
     <form class="tile create-form" method="POST" action="{{ route('frontend.home.store') }}" enctype="multipart/form-data">
         @csrf
@@ -58,4 +60,7 @@
         </div>
 </div>
 </form>
+
+*/ ?>
+
 @endsection
