@@ -149,9 +149,13 @@ body {
 }
 
 .pagination > li > a {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   margin-bottom: 60px;
+}
+
+.page-item.disabled .page-link {
+  background-color: #000;
 }
 
 .pagination > li > a:focus,
@@ -160,7 +164,7 @@ body {
 .pagination > li > span:hover {
   color: white;
   background-color: crimson;
-  border-color: black;
+  border-color: white;
 }
 
 .page-item.active .page-link {
@@ -171,7 +175,7 @@ body {
 }
 
 .pagination > .active > a {
-  color: black;
+  color: white;
   background-color: crimson;
   border: solid 1px crimson;
 }
