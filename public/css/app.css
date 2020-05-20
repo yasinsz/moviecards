@@ -58,13 +58,13 @@ body {
 .footer {
   margin: 8px;
   margin-bottom: 2px;
-  height: 40px;
   background: #212121;
   color: #212121;
   display: flex;
   align-items: center;
-  justify-content: center;
   justify-content: space-around;
+  height: 48px;
+  margin-top: 10px;
 }
 
 .footer-item {
@@ -72,6 +72,17 @@ body {
   color: #212121;
   height: 32px;
   width: auto;
+  margin-top: -10px;
+  display: flex;
+}
+
+.footer-icon {
+  margin-top: 8px;
+}
+
+.subtitle {
+  color: white;
+  font-size: 12px;
 }
 
 .card-container {
@@ -146,6 +157,10 @@ body {
   border-bottom-color: transparent;
   height: 10px;
   position: absolute;
+}
+
+.pagination {
+  margin-bottom: 20px;
 }
 
 .pagination > li > a {
@@ -849,7 +864,7 @@ fieldset {
 }
 
 .grid-row {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .movie {
@@ -914,7 +929,7 @@ p {
 }
 
 .grid-images {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .dropdown {
