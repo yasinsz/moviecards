@@ -73,6 +73,7 @@ body {
   height: 32px;
   width: auto;
   margin-top: -10px;
+  margin-bottom: -4px;
   display: flex;
 }
 
