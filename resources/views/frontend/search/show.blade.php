@@ -9,7 +9,7 @@
         <img src="{{ 'https://image.tmdb.org/t/p/w154/'.$movie['poster_path'] }}" alt="">
         <h4 class="mt-2 mb-2 font-weight-bold text-white">{{ $movie['title'] }}</h4>
         <div class="flex items-center text-secondary small">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="yellow" width="18px" height="18px">
+            <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="yellow" width="18px" height="18px">
                 <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                 <path d="M0 0h24v24H0z" fill="none" /></svg>
             <span class="ml-1">{{ $movie['vote_average'] * 10 .'%' }}</span>

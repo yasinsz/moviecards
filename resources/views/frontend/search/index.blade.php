@@ -19,7 +19,7 @@
                         </a>
                         <a href="{{ route('show', $movie['id']) }}" class="text-lg text-white mt-1">{{ $movie['title'] }}</a>
                         <div class="movie-info items-center text-secondary small">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="yellow" width="18px" height="18px">
+                            <svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="yellow" width="18px" height="18px">
                                 <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                                 <path d="M0 0h24v24H0z" fill="none" /></svg>
                             <span class="text-white">{{ $movie['vote_average'] * 10 .'%' }}</span>
