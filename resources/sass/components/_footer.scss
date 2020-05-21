@@ -11,18 +11,30 @@
     margin: 8px;
     // margin-left: 70px;
     margin-bottom: 2px;
-    height: 40px;
-    background: rgb(33, 33, 33);
-    color: rgb(33, 33, 33);
+    background: #212121;
+    color: #212121;
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: space-around;
+    height: 48px;
+    margin-top: 10px;
 }
 
 .footer-item {
     text-decoration: none;
-    color: rgb(33, 33, 33);
+    color: #212121;
     height: 32px;
     width: auto;
+    margin-top: -10px;
+    margin-bottom: -4px;
+    display: flex;
+}
+
+.footer-icon {
+    margin-top: 8px;
+}
+
+.subtitle {
+    color: white;
+    font-size: 12px;
 }

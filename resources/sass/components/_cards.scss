@@ -76,14 +76,18 @@
     }
 }
 
-// .pagination {
-//     margin-bottom: 70px;
-// }
+.pagination {
+    margin-bottom: 20px;
+}
 
 .pagination > li > a {
-    background-color: white;
-    color: black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-bottom: 60px;
+}
+
+.page-item.disabled .page-link {
+    background-color: #000;
 }
 
 .pagination > li > a:focus,
@@ -92,7 +96,7 @@
 .pagination > li > span:hover {
     color: white;
     background-color: crimson;
-    border-color: black;
+    border-color: rgb(255, 255, 255);
 }
 
 .page-item.active .page-link {
@@ -103,7 +107,7 @@
 }
 
 .pagination > .active > a {
-    color: black;
+    color: rgb(255, 255, 255);
     background-color: crimson;
     border: solid 1px crimson;
 }

@@ -58,13 +58,13 @@ body {
 .footer {
   margin: 8px;
   margin-bottom: 2px;
-  height: 40px;
   background: #212121;
   color: #212121;
   display: flex;
   align-items: center;
-  justify-content: center;
   justify-content: space-around;
+  height: 48px;
+  margin-top: 10px;
 }
 
 .footer-item {
@@ -72,6 +72,18 @@ body {
   color: #212121;
   height: 32px;
   width: auto;
+  margin-top: -10px;
+  margin-bottom: -4px;
+  display: flex;
+}
+
+.footer-icon {
+  margin-top: 8px;
+}
+
+.subtitle {
+  color: white;
+  font-size: 12px;
 }
 
 .card-container {
@@ -148,10 +160,18 @@ body {
   position: absolute;
 }
 
+.pagination {
+  margin-bottom: 20px;
+}
+
 .pagination > li > a {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   margin-bottom: 60px;
+}
+
+.page-item.disabled .page-link {
+  background-color: #000;
 }
 
 .pagination > li > a:focus,
@@ -160,7 +180,7 @@ body {
 .pagination > li > span:hover {
   color: white;
   background-color: crimson;
-  border-color: black;
+  border-color: white;
 }
 
 .page-item.active .page-link {
@@ -171,7 +191,7 @@ body {
 }
 
 .pagination > .active > a {
-  color: black;
+  color: white;
   background-color: crimson;
   border: solid 1px crimson;
 }
@@ -845,7 +865,7 @@ fieldset {
 }
 
 .grid-row {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .movie {
@@ -881,6 +901,10 @@ p {
   font-family: Helvetica;
 }
 
+.star {
+  margin-top: -5px;
+}
+
 .feature-cast {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -910,7 +934,7 @@ p {
 }
 
 .grid-images {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .dropdown {
