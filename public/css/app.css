@@ -67,23 +67,28 @@ body {
   margin-top: 10px;
 }
 
+.footer > a.active > svg {
+  fill: white;
+}
+
 .footer-item {
   text-decoration: none;
-  color: #212121;
-  height: 32px;
-  width: auto;
   margin-top: -10px;
   margin-bottom: -4px;
   display: flex;
-}
-
-.footer-icon {
-  margin-top: 8px;
+  width: 32px;
+  height: 32px;
+  fill: black;
 }
 
 .subtitle {
-  color: white;
+  color: #888;
   font-size: 12px;
+  font-weight: 500;
+}
+
+.subtitle > span.active > a {
+  color: white;
 }
 
 .card-container {
