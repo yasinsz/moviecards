@@ -16,7 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 48px;
+    height: 42px;
     margin-top: 10px;
 }
 .footer > a.active > svg {
@@ -26,20 +26,10 @@
 .footer-item {
     text-decoration: none;
     //color: #212121;
-    margin-top: -10px;
-    margin-bottom: -4px;
+    //margin-top: -10px;
+    margin-bottom: 6px;
     display: flex;
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     fill: rgb(0, 0, 0);
-}
-
-.subtitle {
-    color: #888;
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.subtitle > span.active > a {
-    color: rgb(255, 255, 255);
 }

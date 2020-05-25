@@ -64,6 +64,28 @@ class CardController extends Controller
 
 
 
+
+
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function bookmark(Request $request, Card $card)
+    {
+
+        $data = $this->validateData();
+
+        $card->create($data);
+
+        return redirect()->route('frontend.home');
+    }
+
+
+
+
     /**
      * Display the specified resource.
      *
