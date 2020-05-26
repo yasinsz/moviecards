@@ -35,7 +35,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        max-width: 175px;
+        max-width: 165px;
     }
 
     .star-svg {
@@ -61,7 +61,8 @@
     .card-bookmark {
         border: 22px solid rgba(245, 245, 245, 0.883);
         border-bottom-color: transparent;
-        height: 10px;
+        max-height: 0;
+        max-width: 0;
         position: absolute;
         right: 18px;
         margin-right: -10px;
@@ -73,6 +74,24 @@
         border-bottom-color: transparent;
         height: 10px;
         position: absolute;
+    }
+
+    .card-button {
+        max-width: 24px;
+        position: absolute;
+        right: 18px;
+
+        border: 26px solid rgba(245, 245, 245, 0.883);
+        border-bottom-color: #131313;
+        border-radius: unset;
+        height: 34px;
+        margin-right: -42px;
+        margin-top: -24px;
+
+        &.marked {
+            border: 26px solid crimson;
+            border-bottom-color: #131313;
+        }
     }
 }
 

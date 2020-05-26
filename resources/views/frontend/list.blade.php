@@ -6,7 +6,10 @@
 <div class="card-container">
     @foreach($cards as $card)
     <div class="card">
-        <span class="card-bookmark"></span>
+        <form class="card-bookmark" method="POST" action="{{ route('frontend.bookmarks', $card) }}">
+            @csrf
+            <button class="card-button @if($card->bookmarked) marked @endif" type="submit"></button>
+        </form>
         <img class="card-poster" src="{{ $card->poster_path }}"></img>
         <a class="card-title">{{ $card->title }}</a>
         <ul class="card-info">

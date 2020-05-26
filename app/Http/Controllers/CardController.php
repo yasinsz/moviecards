@@ -16,14 +16,14 @@ class CardController extends Controller
      */
     public function index()
     {
-        return view('frontend.home', [
+        return view('frontend.list', [
             'cards' => Card::paginate(4),
         ]);
     }
 
     public function currentPage()
     {
-        return view('frontend.home', [
+        return view('frontend.list', [
             'cards' => Card::currentPage()
         ]);
     }
@@ -76,11 +76,18 @@ class CardController extends Controller
     public function bookmark(Request $request, Card $card)
     {
 
-        $data = $this->validateData();
 
-        $card->create($data);
 
-        return redirect()->route('frontend.home');
+        $card->bookmarked = true;
+
+        $card->save();
+
+
+
+
+        return view('frontend.bookmarks', [
+            'cards' => Card::where('bookmarked', true),
+        ]);
     }
 
 
