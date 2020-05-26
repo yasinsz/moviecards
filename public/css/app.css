@@ -63,27 +63,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 48px;
+  height: 42px;
   margin-top: 10px;
+}
+
+.footer > a.active > svg {
+  fill: white;
 }
 
 .footer-item {
   text-decoration: none;
-  color: #212121;
-  height: 32px;
-  width: auto;
-  margin-top: -10px;
-  margin-bottom: -4px;
+  margin-bottom: 6px;
   display: flex;
-}
-
-.footer-icon {
-  margin-top: 8px;
-}
-
-.subtitle {
-  color: white;
-  font-size: 12px;
+  width: 40px;
+  height: 40px;
+  fill: black;
 }
 
 .card-container {
@@ -119,7 +113,7 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 175px;
+  max-width: 165px;
 }
 
 .card-container .star-svg {
@@ -146,7 +140,8 @@ body {
 .card-container .card-bookmark {
   border: 22px solid rgba(245, 245, 245, 0.883);
   border-bottom-color: transparent;
-  height: 10px;
+  max-height: 0;
+  max-width: 0;
   position: absolute;
   right: 18px;
   margin-right: -10px;
@@ -158,6 +153,23 @@ body {
   border-bottom-color: transparent;
   height: 10px;
   position: absolute;
+}
+
+.card-container .card-button {
+  max-width: 24px;
+  position: absolute;
+  right: 18px;
+  border: 26px solid rgba(245, 245, 245, 0.883);
+  border-bottom-color: #131313;
+  border-radius: unset;
+  height: 34px;
+  margin-right: -42px;
+  margin-top: -24px;
+}
+
+.card-container .card-button.marked {
+  border: 26px solid crimson;
+  border-bottom-color: #131313;
 }
 
 .pagination {

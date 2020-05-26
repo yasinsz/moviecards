@@ -16,25 +16,20 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 48px;
+    height: 42px;
     margin-top: 10px;
+}
+.footer > a.active > svg {
+    fill: white;
 }
 
 .footer-item {
     text-decoration: none;
-    color: #212121;
-    height: 32px;
-    width: auto;
-    margin-top: -10px;
-    margin-bottom: -4px;
+    //color: #212121;
+    //margin-top: -10px;
+    margin-bottom: 6px;
     display: flex;
-}
-
-.footer-icon {
-    margin-top: 8px;
-}
-
-.subtitle {
-    color: white;
-    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    fill: rgb(0, 0, 0);
 }

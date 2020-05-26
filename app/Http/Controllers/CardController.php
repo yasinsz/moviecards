@@ -16,14 +16,14 @@ class CardController extends Controller
      */
     public function index()
     {
-        return view('frontend.home', [
+        return view('frontend.list', [
             'cards' => Card::paginate(4),
         ]);
     }
 
     public function currentPage()
     {
-        return view('frontend.home', [
+        return view('frontend.list', [
             'cards' => Card::currentPage()
         ]);
     }
@@ -59,6 +59,35 @@ class CardController extends Controller
         $card->create($data);
 
         return redirect()->route('frontend.home');
+    }
+
+
+
+
+
+
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function bookmark(Request $request, Card $card)
+    {
+
+
+
+        $card->bookmarked = true;
+
+        $card->save();
+
+
+
+
+        return view('frontend.bookmarks', [
+            'cards' => Card::where('bookmarked', true),
+        ]);
     }
 
 
