@@ -11,7 +11,6 @@ class BookmarkController extends Controller
 
     public function index()
     {
-
         return view('frontend.list', [
             'cards' => Card::where('bookmarked', true)->paginate(4)
         ]);

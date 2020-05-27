@@ -34,15 +34,11 @@ Route::get('/login', function () {
 });
 
 
-
-
 Route::get('/search', 'SearchController@index')->name('index');
 Route::get('/search/movies/{movie}', 'SearchController@show')->name('show');
 
-
 Route::post('/',                'CardController@store')->name('frontend.home.store');
 Route::get('/',                'CardController@index')->name('frontend.home');
-
 
 Route::post('/bookmarks/{card}',                'BookmarkController@bookmark')->name('frontend.bookmarks');
 Route::get('/bookmarks', 'BookmarkController@index')->name('frontend.bookmarks.index');
