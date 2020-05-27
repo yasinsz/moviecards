@@ -27,8 +27,6 @@ class SearchController extends Controller
             return [$genre['id'] => $genre['name']];
         });
 
-        //dump($popularMovies);
-
         return view('frontend.search.index', ['popularMovies' => $popularMovies, 'genres' => $genres]);
     }
 
@@ -42,8 +40,6 @@ class SearchController extends Controller
         //
     }
 
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -54,7 +50,6 @@ class SearchController extends Controller
     {
         // 
     }
-
 
     /**
      * Display the specified resource.
@@ -67,9 +62,6 @@ class SearchController extends Controller
         $movie = Http::withToken(config('services.tmdb.token'))
             ->get('https://api.themoviedb.org/3/movie/' . $id . '?append_to_response=credits,videos,images')
             ->json();
-
-        //dump($movie);
-
 
         return view('frontend.search.show', ['movie' => $movie,]);
     }

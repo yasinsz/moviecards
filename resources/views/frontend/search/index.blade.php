@@ -3,7 +3,6 @@
 @section('content')
 
 <div>
-
     <livewire:search-dropdown>
 
         <div class="popular-movies">
@@ -34,26 +33,7 @@
                     </div>
                     @endforeach
                 </div>
-
             </div>
-
-
-
-
-            <!-- imput movie api -->
-
-
-
-
-
-
-
         </div>
-
-
-
-
-
-
 </div>
 @endsection
