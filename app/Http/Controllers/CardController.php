@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 
 class CardController extends Controller
 {
-
     /**
      * Display a listing of the resource.
      *
@@ -46,26 +45,12 @@ class CardController extends Controller
      */
     public function store(Request $request, Card $card)
     {
-
         $data = $this->validateData();
-
-        // if ($request->has('poster_path')) {
-        //     $path = $request->get('poster_path');
-        //     // $path->urlencode();
-        //     $data['poster_path'] = $path;
-        //     //$data->save();
-        // }
 
         $card->create($data);
 
         return redirect()->route('frontend.home');
     }
-
-
-
-
-
-
 
     /**
      * Store a newly created resource in storage.
@@ -75,23 +60,14 @@ class CardController extends Controller
      */
     public function bookmark(Request $request, Card $card)
     {
-
-
-
         $card->bookmarked = true;
 
         $card->save();
-
-
-
 
         return view('frontend.bookmarks', [
             'cards' => Card::where('bookmarked', true),
         ]);
     }
-
-
-
 
     /**
      * Display the specified resource.

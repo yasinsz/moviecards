@@ -4,17 +4,16 @@
 
 This is my graduation project from the web devevlopment bootcamp at neuefische Hamburg.
 
-Movie Cards helps film enthusiasts to get an overview of their films. Create your own personal library of Movie Cards. The Movie Cards app makes it easy to find the most important information about a movie.
+Movie Cards helps film enthusiasts to get an overview of their films. Create your own personal library of Movie Cards. The Movie Cards app makes it easy to find the most important information about a movie. 
 
-For example:
-
--   movie ratings
--   genres
--   release dates
--   cast members
--   crew members
--   trailers
--   images
+For example: 
+- movie ratings
+- genres
+- release dates
+- cast members
+- crew members 
+- images
+- trailers
 
 ---
 

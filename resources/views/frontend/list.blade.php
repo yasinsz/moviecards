@@ -2,7 +2,6 @@
 
 @section('content')
 
-
 <div class="card-container">
     @foreach($cards as $card)
     <div class="card">

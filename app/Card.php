@@ -9,7 +9,6 @@ class Card extends Model
 {
     protected $fillable = ['title', 'vote_average', 'release_date', 'name', 'poster_path'];
 
-
     public function imageUrl()
     {
         if ($this->poster_path) {
