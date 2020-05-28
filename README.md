@@ -1,4 +1,4 @@
-![img](public/assets/img/logo.jpeg)
+![img](public/assets/img/readme-logo.png)
 
 
 ## About Movie Cards
@@ -8,11 +8,12 @@ This is my graduation project from the web devevlopment bootcamp at neuefische H
 Movie Cards helps film enthusiasts to get an overview of their films. Create your own personal library of Movie Cards. The Movie Cards app makes it easy to find the most important information about a movie. 
 
 For example: 
-- movie rating, 
-- genres, 
-- release date
+- movie ratings
+- genres
+- release dates
 - cast members
 - crew members 
+- images
 - trailers
 
 ---
